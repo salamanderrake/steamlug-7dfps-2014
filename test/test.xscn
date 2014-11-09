@@ -60,7 +60,9 @@
 		<bool name="fxaa/enabled"> False </bool>
 		<int name="background/mode"> 2 </int>
 		<color name="background/color"> 0, 0, 1, 1 </color>
-		<resource name="background/texture"></resource>		<resource name="background/cubemap"></resource>		<real name="background/energy"> 1 </real>
+		<nil name="background/texture">  </nil>
+		<nil name="background/cubemap">  </nil>
+		<real name="background/energy"> 1 </real>
 		<real name="background/scale"> 1 </real>
 		<real name="background/glow"> 0 </real>
 		<bool name="glow/enabled"> False </bool>
@@ -87,7 +89,7 @@
 		<real name="fog/begin"> 100 </real>
 		<color name="fog/begin_color"> 1, 0, 0, 1 </color>
 		<color name="fog/end_color"> 0, 0, 0, 1 </color>
-		<real name="fog/attenuation"> 2 </real>
+		<real name="fog/attenuation"> 0.098073 </real>
 		<bool name="fog/bg"> True </bool>
 		<bool name="bcs/enabled"> False </bool>
 		<real name="bcs/brightness"> 1 </real>
@@ -388,12 +390,6 @@
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
-							<string> "deflight_rot_y" </string>
-							<real> 0.628319 </real>
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
 							<string> "viewports" </string>
 							<array  len="4" shared="false">
 								<dictionary  shared="false">
@@ -461,22 +457,28 @@
 									<vector3> 0, 0, 0 </vector3>
 								</dictionary>
 							</array>
-							<string> "default_light" </string>
-							<bool> True </bool>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "deflight_rot_y" </string>
+							<real> 0.628319 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
 							<string> "viewport_mode" </string>
 							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
 							<string> "ambient_light_color" </string>
 							<color> 0.15, 0.15, 0.15, 1 </color>
 							<string> "show_grid" </string>
 							<bool> True </bool>
-							<string> "znear" </string>
-							<real> 0.1 </real>
 							<string> "show_origin" </string>
 							<bool> True </bool>
-							<string> "deflight_rot_x" </string>
-							<real> 0.942478 </real>
+							<string> "znear" </string>
+							<real> 0.1 </real>
 							<string> "default_srgb" </string>
 							<bool> False </bool>
+							<string> "deflight_rot_x" </string>
+							<real> 0.942478 </real>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_show_subtree" </string>

@@ -62,12 +62,14 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 2 </int>
+							<int> 4 </int>
 							<string> "sources" </string>
-							<array  len="3" shared="false">
-								<string> "res://scene_switcher.gd" </string>
+							<array  len="5" shared="false">
 								<string> "res://main_menu/main_menu.gd" </string>
 								<string> "res://player/lantern.gd" </string>
+								<string> "res://net/lobby.gd" </string>
+								<string> "res://helpers/scene_switcher.gd" </string>
+								<string> "res://net/network.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -184,7 +186,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
 				<real> 122 </real>
 				<real> 245 </real>

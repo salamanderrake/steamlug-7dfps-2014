@@ -1,6 +1,8 @@
 
 extends RigidBody
 
+var net
+
 # Game stuff
 var win_hsize
 var exit_game = false
@@ -20,7 +22,7 @@ var lantern_now = false
 var lantern_then = false
 
 func _ready():
-
+	net = get_node("/root/network")
 	var rot = get_rotation()
 	rotation.x = rot.y
 	rot.y = 0
@@ -113,4 +115,3 @@ func _integrate_forces(state):
 func _input(ev):
 	if ev.type == InputEvent.MOUSE_MOTION:
 		rotation += (ev.pos - win_hsize) * 0.001
-

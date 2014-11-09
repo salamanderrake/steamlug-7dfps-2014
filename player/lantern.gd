@@ -32,14 +32,16 @@ func _ready():
 	set_process(true)
 	pass
 
-func _process(dt):
+func fuck_process(dt):
 	# TODO: Add code to set brightness levels based on oil level
 	
 	# Rays don't collide with the floor since it's been set up as not ray pickable
 	for rc in raycasts:
 		if rc.is_colliding():
 			print( rc.get_name(), ": HIT! ", rc.get_collider().get_name(), ", ", rc.get_collision_point() )
+			pass
 		else:
+			pass
 			print( rc.get_name(), ": no hit" )
 	print("\n")
 	
